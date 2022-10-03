@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/jadenstyles.css" />
+    <title>Demo Site</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="./Assets/FES.svg" alt="logo.svg" class="nav__image" />
+      <ul class="nav__links">
+        <li class="nav__item"><a href="#about">About</a></li>
+        <li class="nav__item"><a href="#discord">Discord</a></li>
+        <li class="nav__item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="row">
+        <div class="hero__text">
+          <h1>Best place to learn frontend</h1>
+          <p>
+            Go from being an absolute beginner to being a pro with a simplified
+            process
+          </p>
+          <button class="hero__button">Start now</button>
+        </div>
+        <figure class="hero__image__wrapper">
+          <img
+            src="./assets/laptop.png"
+            class="hero__image"
+            alt="homepage image"
+          />
+        </figure>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <h2 class="about__header">About</h2>
+        <div class="about__wrapper">
+          <div class="about__text__wrapper">
+            <p class="about__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
+              voluptatibus eum quidem dolorem repellat dolore perspiciatis atque
+              mollitia assumenda deserunt autem molestias, qui aut eos quos
+              nulla! Explicabo, deleniti temporibus? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Numquam similique in corrupti rerum
+              voluptatibus. Quos eius nostrum cupiditate, nihil vitae officia
+              neque sit odio facilis nobis alias expedita, eligendi atque.
+            </p>
+          </div>
+          <figure class="about__image_wrapper">
+            <img class="about__image" src="./assets/about.jpg" alt="" />
+          </figure>
+        </div>
+      </section>
+      <section id="discord">
+        <h2 class="discord__header">Discord</h2>
+        <div class="discord__wrapper">
+          <figure class="discord__image__wrapper">
+            <img class="discord__image" src="./assets/discord.png" />
+          </figure>
+          <div class="discord__text__wrapper">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              ducimus debitis itaque similique eligendi fugiat vero suscipit, fuga
+              molestiae aperiam. Fuga eum consectetur, inventore labore magnam
+              deleniti laboriosam sed illo.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2 class="contact__header">Contact</h2>
+        <form class="contact__form">
+          <span class="contact__form__label">Email</span>
+          <input class="contact__form__email" type="text" placeholder="john@gmail.com" />
+          <span class="contact__form__label">Message</span>
+          <textarea class="contact__form__message"type="text" placeholder="john@gmail.com"></textarea>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <img class="nav__image" src="./assets/FES.svg" />
+      <div>
+        <a href="#about">About</a>
+        <a href="#discord">Discord</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p>Front End Simplified</p>
+    </footer>
+  </body>
+</html>

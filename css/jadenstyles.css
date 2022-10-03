@@ -1,0 +1,186 @@
+html,
+body {
+  width: 100%;
+}
+
+body,
+header {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+img {
+  min-width: 0;
+}
+/* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5% 2%;
+  margin: 0;
+  background-color: powderblue;
+}
+
+.nav__image {
+  height: 3vh;
+}
+
+.nav__links {
+  list-style-type: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.nav__item {
+  float: left;
+  margin: 0 10px;
+}
+
+/* HERO */
+
+header {
+  min-height: 90vh;
+  background-color: #e6d7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row {
+  margin: 0 3%;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.hero__text {
+  max-width: 45%;
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.hero__button {
+  padding: 5px 40px;
+  font-size: 1.5rem;
+  background-color: lightseagreen;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 250ms;
+}
+
+.hero__button:hover {
+  background-color: green;
+}
+
+.hero__image__wrapper {
+  width: 50vh;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+/* ABOUT */
+#about,
+#discord,
+#contact {
+  padding: 2% 5%;
+}
+
+.about__header,
+.discord__header,
+.contact__header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.about__wrapper {
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__text__wrapper {
+  max-width: 50%;
+  margin: auto;
+  padding: 2rem 0 3rem 0;
+}
+
+.about__text {
+  margin: 0 20px;
+}
+
+.about__image_wrapper {
+  margin: auto;
+  width: 400px;
+}
+
+.about__image {
+  width: 100%;
+}
+
+/* Discord */
+
+.discord__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.discord__image__wrapper {
+  width: 30%;
+}
+
+.discord__image {
+  width: 100%;
+}
+.discord__text__wrapper {
+  max-width: 40%;
+}
+
+/* Contact */
+
+.contact__form {
+  margin: auto;
+  background-color: gray;
+  max-width: 900px;
+  padding: 10px;
+}
+
+.contact__form__label,
+.contact__form__email,
+.contact__form__message {
+  display: block;
+  width: 100%;
+  margin: 10px 0 10px;
+}
+
+.contact__form__label {
+  font-size: 1.25rem;
+  font-weight: 600px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
