@@ -103,6 +103,9 @@ p {
   padding: 2% 5%;
 }
 
+#about {
+    background-color: antiquewhite;
+}
 .about__header,
 .discord__header,
 .contact__header {
@@ -140,6 +143,10 @@ p {
 
 /* Discord */
 
+#discord {
+    background-color: lightblue;
+}
+
 .discord__wrapper {
   display: flex;
   justify-content: space-around;
@@ -158,6 +165,9 @@ p {
 
 /* Contact */
 
+#contact {
+    background-color: powderblue;
+}
 .contact__form {
   margin: auto;
   background-color: gray;

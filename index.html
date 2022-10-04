@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/jadenstyles.css" />
+    <!-- <link rel="stylesheet" href="./css/jadenstyles.css" /> -->
+    <link rel="stylesheet" href="./css/fes-styles.css" />
     <title>Demo Site</title>
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <nav>
-      <img src="./Assets/FES.svg" alt="logo.svg" class="nav__image" />
+      <figure class="nav__image--wrapper">
+        <img src="./Assets/FES.svg" alt="logo.svg" class="nav__image" />
+      </figure>
       <ul class="nav__links">
         <li class="nav__item"><a href="#about">About</a></li>
         <li class="nav__item"><a href="#discord">Discord</a></li>
@@ -24,77 +23,88 @@
       </ul>
     </nav>
     <header>
-      <div class="row">
-        <div class="hero__text">
-          <h1>Best place to learn frontend</h1>
-          <p>
+      <div class="container">
+        <div class="hero__text--wrapper">
+          <h1 class="hero__header">Best place to learn frontend</h1>
+          <p class="hero__subheader">
             Go from being an absolute beginner to being a pro with a simplified
             process
           </p>
           <button class="hero__button">Start now</button>
         </div>
-        <figure class="hero__image__wrapper">
-          <img
-            src="./assets/laptop.png"
-            class="hero__image"
-            alt="homepage image"
-          />
+        <figure class="hero__image--wrapper">
+          <img src="./assets/laptop.png" alt="homepage image" />
         </figure>
       </div>
     </header>
     <main>
       <section id="about">
-        <h2 class="about__header">About</h2>
-        <div class="about__wrapper">
-          <div class="about__text__wrapper">
-            <p class="about__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
-              voluptatibus eum quidem dolorem repellat dolore perspiciatis atque
-              mollitia assumenda deserunt autem molestias, qui aut eos quos
-              nulla! Explicabo, deleniti temporibus? Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Numquam similique in corrupti rerum
-              voluptatibus. Quos eius nostrum cupiditate, nihil vitae officia
-              neque sit odio facilis nobis alias expedita, eligendi atque.
-            </p>
+        <h2 class="section__header">About</h2>
+        <div class="container">
+          <div class="section__container">
+            <div class="section__text--wrapper">
+              <p class="section__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
+                voluptatibus eum quidem dolorem repellat dolore perspiciatis atque
+                mollitia assumenda deserunt autem molestias, qui aut eos quos
+                nulla! Explicabo, deleniti temporibus? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Numquam similique in corrupti rerum
+                voluptatibus. Quos eius nostrum cupiditate, nihil vitae officia
+                neque sit odio facilis nobis alias expedita, eligendi atque.
+              </p>
+            </div>
+            <figure class="section__image--wrapper">
+              <img class="section__image" src="./assets/about.jpg" alt="" />
+            </figure>
           </div>
-          <figure class="about__image_wrapper">
-            <img class="about__image" src="./assets/about.jpg" alt="" />
-          </figure>
         </div>
       </section>
       <section id="discord">
-        <h2 class="discord__header">Discord</h2>
-        <div class="discord__wrapper">
-          <figure class="discord__image__wrapper">
-            <img class="discord__image" src="./assets/discord.png" />
-          </figure>
-          <div class="discord__text__wrapper">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              ducimus debitis itaque similique eligendi fugiat vero suscipit, fuga
-              molestiae aperiam. Fuga eum consectetur, inventore labore magnam
-              deleniti laboriosam sed illo.
-            </p>
+        <h2 class="section__header">Discord</h2>
+        <div class="container">
+          <div class="section__container">
+            <figure class="section__image--wrapper discord__image--wrapper">
+              <img src="./assets/discord.png" />
+            </figure>
+            <div class="section__text--wrapper">
+              <p class="section__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                ducimus debitis itaque similique eligendi fugiat vero suscipit,
+                fuga molestiae aperiam. Fuga eum consectetur, inventore labore
+                magnam deleniti laboriosam sed illo.
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <section id="contact">
-        <h2 class="contact__header">Contact</h2>
+        <h2 class=" section__header contact__header">Contact</h2>
         <form class="contact__form">
           <span class="contact__form__label">Email</span>
-          <input class="contact__form__email" type="text" placeholder="john@gmail.com" />
+          <input
+            class="contact__form__email"
+            type="text"
+            placeholder="Enter Your Email Here"
+          />
           <span class="contact__form__label">Message</span>
-          <textarea class="contact__form__message"type="text" placeholder="john@gmail.com"></textarea>
+          <textarea
+            class="contact__form__message"
+            type="text"
+            placeholder="Write Your Message Here"
+          ></textarea>
+          <button>Contact Us!</button>
         </form>
       </section>
     </main>
 
     <footer>
-      <img class="nav__image" src="./assets/FES.svg" />
-      <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
+      <figure class="footer__image--wrapper">
+        <img src="./assets/FES.svg" />
+      </figure>
+      <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
       </div>
       <p>Front End Simplified</p>
     </footer>
